@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1c1e21 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #242526 !important;
+}
+.container {
+  margin: 0 1rem !important;
+}
+.navbar-light .navbar-brand {
+  color: #e4e6eb !important;
+}
+.navbar i {
+  font-size: 20px;
+  padding: 0.75rem 2rem;
+}
+.navbar i:hover {
+  background-color: #3a3b3c;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listOfUsers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  justify-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 90rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+  color: #e4e6eb !important;
+  background-color: #242526 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+  transition: transform .3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.listOfUsers .card:hover {
+  transform: scale(1.02);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card i {
+  margin-right: 8px;
+}
+
+.btn {
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 6px !important;
+  background-color: #2374e1 !important;
+  border-color: #2374e1 !important;
+}
+
+.btn:hover {
+  background-color: #2D88FF !important;
+  border-color: #2D88FF !important;
+}
+
+.userProfile {
+  margin: 2rem auto;
+}
+.userProfile .card {
+  margin: 2rem auto !important;
+  padding: 1rem;
+}
+
+.table {
+  margin: 0 !important;
 }
